@@ -1,0 +1,25 @@
+
+
+button a{
+    text-decoration:none;
+    color: black;
+    
+}
+#macarte {
+    height: 200px;
+    
+    
+    
+}
+ .form-container
+ {
+     background: #fff; 
+     border-radius: 15px;
+     padding: 30px 80px;
+     max-width: 800px;
+     margin: 0 auto;
+     box-shadow: 0 15px 16px .17px rgba(0,0,0,0.05);
+ }
+
+
+

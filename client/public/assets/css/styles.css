@@ -1,0 +1,243 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+#macarte {
+     height: 100px;
+     position:relative;
+     top:-1430px;
+     
+     
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: gold;
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: #555;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: white;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+.sous{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    background-color: RGBa(200,200,200,0.8);
+}
+
+
+
+.slider .slides img  {
+    
+    width: 100%;
+    max-height: 120px;
+    position: relative;
+    top: -10px;
+    
+}
+img { 
+
+    width: 300px;
+    height: 300px;
+    
+}
+
+
+#poulycro .nav-item-poulet ul li a {
+    text-align: center;
+    
+}
+
+
+/*header.header div.sliders{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+header h1{
+    font-size: 25px;
+    text-align: center;
+}
+.slider{
+    overflow: hidden;
+
+}
+.slides{
+    
+    display: flex;
+    position: relative;
+    left: 400px;
+    animation: glisse 15s infinite ease;
+}
+
+
+
+.nav-item {
+    flex: 1;
+    height: 200px;
+    
+}
+.nav-item-poulet ul{
+    list-style-type: none;
+}
+.nav-item-poulet ul a{
+     text-decoration: none;
+     position: relative;
+     top: 127px;
+     font-family: cursive;
+}
+
+.nav-item-poulet {
+    background: url(../images/photo_plat_1.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item-pattes {
+    background: url(../images/photo_plat_2.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item-burger {
+    background: url(../images/photo_plat_3.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item-salade {
+    background: url(../images/photo_plat_4.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+
+   
+    transition: 0.3s all;
+    width: 70%;
+}
+.item:hover {
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+.item:hover {
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.item-infos {
+    padding: 20px;
+    line-height: 40px;
+}
+.item-infos hr {
+    margin: 10px 0 10px 0;
+    opacity: 0.5;
+}
+.nav-item-poulet .item-infos .prix{
+    position: relative;
+    top: -20px;
+}
+
+p.prix {
+    font-weight: bold;
+    font-size: 22px;
+}
+@keyframes glisse{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(0);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(-1000px);
+    }
+
+    
+    }
+
+
+
+
+/* menu bloqué à droite */
+
+.sticky {
+    position: fixed;
+    width: 500px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(10px);
+    transition: 0.6s all;
+}
+
+.sticky  {
+    padding-top: 200px;
+}
+
+.sticky nav.menu ul {
+    flex-direction: column;
+}
+
+.sticky, nav.menu ul li {
+    margin: 2px;
+}

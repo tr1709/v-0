@@ -1,0 +1,55 @@
+[
+	{
+		"id": "182163f2f5535904a695c53e38d3bf41",
+		"nom": "Restaurant halal",
+		"cover": "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1647679841/Clent/Project%201/photo_plat_1_no0if0.jpg",
+		"menuDujour": {
+			"nom": "Poulet DG",
+			"prix": 22,
+			"ingredients":"Poulet, plantains mures , oignons,tomates, carottes"
+		},
+		"lat": "50.8499",
+		"lon": "4.3524",
+		"address": "95 rue gatti de gamond 1180 uccle"
+	},
+	{
+		"id": "182163f2f5535904a695c53e38d3bf42",
+		"cover": "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1647679842/Clent/Project%201/photo_plat_2_hvesto.jpg",
+		"nom": "Restaurant italien",
+		"menuDujour": {
+			"nom": "Carbonera",
+			"prix": 12,
+			"ingredients":"pattes, oeufs, 150g guanciale,120g pecorino"
+		},
+		"lat": "50.8",
+		"lon": "4.33333",
+		"address": "71 rue xavier de bue 1180 uccle"
+	},
+
+	{
+		"id": "182163f2f5535904a695c53e38d3bf43",
+		"cover": "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1647679844/Clent/Project%201/photo_plat_3_jwxbfr.jpg",
+		"nom": "Fast food big",
+		"menuDujour": {
+			"nom": "BIG Bacon",
+			"prix": 5.99,
+			"ingredients":"bun gris, sauce fumé, viande bacon, frittes"
+		},
+		"lat": "50.8999",
+		"lon": "4.425298",
+		"address": "644 chaussee d'alsemberg 1180 uccle"
+	},
+	{
+		"id": "182163f2f5535904a695c53e38d3bf44",
+		"cover": "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1647679846/Clent/Project%201/photo_plat_4_ksqfrq.jpg",
+		"nom": "Restaurant de la nature",
+		"menuDujour": {
+			"nom": "Salade de roquette a l'avocat",
+			"prix": 8.99,
+			"ingredients":"roquette, avocats murs, jus de citron, haricots"
+		},
+		"lat": "50.8189",
+		"lon": "4.4009",
+		"address": "56 rue xavier de bue 1180 uccle"
+	}
+]

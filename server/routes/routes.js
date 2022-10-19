@@ -1,0 +1,48 @@
+const express = require("express");
+const router = express.Router();
+const createCommande = require("./create-commande.js");
+const getAllCommande = require("./get-all-commande.js");
+const getACommande = require("./get-commande-by-id");
+const isCommandeReady = require("./is-commande-ready.js");
+const cancelCommande = require("./cancel-commande");
+const eraseCommandes = require("./erase-commande");
+const getDeliverers = require("./livreurs");
+const getRestaurants = require("./restaurants");
+const getCommandeByRestaurant = require("./get-commande-by-restaurant.js");
+const getUnderDelivery = require("./en-cours-livraison");
+const isDelivery = require("./is-delivered");
+const pendingDelivery = require("./en-attente-de-livreurs");
+const restaurantWaiting = require("./restaurant-attente-livreurs");
+const restaurantCommandeWaiting = require("./get-restaurant-commande-waiting");
+const isCommande = require("./check-commande-valid");
+const commandeApreparer = require("./commande-apreparer");
+const allApreparer = require("./all-en-preparation");
+const allEnAttenteLivreur = require("./all-en-attente-livreurs");
+const allEnCoursLivraison = require("./all-en-cours-livraisson");
+const allDelivered = require("./all-delivered");
+const commandeLivre = require("./commande-delivré");
+// commandes
+router.get("/get-all-commande", getAllCommande);
+router.get("/get-a-commande/:id", getACommande);
+router.get("/get-commande-by-restaurant/:id", getCommandeByRestaurant);
+router.get("/get-commande-under-delivery/:id", getUnderDelivery);
+router.get("/get-commande-is-delivery/:id", isDelivery);
+router.get("/get-commande-pending-delivery/:id", pendingDelivery);
+router.get("/all-a-apreparer", allApreparer);
+router.get("/all-en-attente-livreur", allEnAttenteLivreur);
+router.get("/all-en-cours-livraison", allEnCoursLivraison);
+router.get("/all-delivered", allDelivered);
+router.put("/is-commande-ready/:id", isCommandeReady);
+router.put("/cancel-commande/:id", cancelCommande);
+router.post("/erase-commandes", eraseCommandes);
+router.post("/commande/restaurant/:id", createCommande);
+router.post("/is-commande/:id", isCommande);
+router.post("/a-preparer", commandeApreparer);
+router.post("/commande-livre/:id",commandeLivre );
+// livreures
+router.get("/livreurs", getDeliverers);
+// restaurants
+router.get("/restaurants", getRestaurants);
+router.get("/waiting-deliver", restaurantWaiting);
+router.get("/restaurant-commande-waiting", restaurantCommandeWaiting);
+module.exports = router;
